@@ -6,10 +6,23 @@
     <groupId>com.yuhangTao</groupId>
     <artifactId>short-video-root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <name>short-video-root</name>
-    <description>Demo project for Spring Boot</description>
+    <name>小宇短视频</name>
+    <description>
+        微信短视频
+        小程序
+        maven
+        springmvc
+        springboot
+        mybatis
+        mybatis-pagehelper
+        redis
+        ffmpeg
+        druid
+        mariadb/mysql
+        zookeeper音频操作
+    </description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,28 +36,5 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>
