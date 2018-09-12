@@ -9,8 +9,5 @@
         <module name="short-video-root" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="short-video-root" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
