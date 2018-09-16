@@ -1,6 +1,6 @@
 package com.yuhangTao.org.n3r.idworker;
 
-import org.n3r.idworker.strategy.DefaultRandomCodeStrategy;
+import com.yuhangTao.org.n3r.idworker.strategy.DefaultRandomCodeStrategy;
 
 public class Code {
     private static RandomCodeStrategy strategy;

@@ -7,7 +7,7 @@ com\yuhangTao\pojo\Comments.class
 com\yuhangTao\pojo\Users.class
 com\yuhangTao\pojo\SearchRecords.class
 com\yuhangTao\pojo\Videos.class
-com\yuhangTao\utils\MyMapper.class
+com\yuhangTao\MyMapper.class
 com\yuhangTao\mapper\BgmMapper.class
 com\yuhangTao\mybatis\utils\GeneratorDisplay.class
 com\yuhangTao\mapper\UsersMapper.class

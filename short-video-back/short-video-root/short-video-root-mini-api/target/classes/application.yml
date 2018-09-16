@@ -49,7 +49,7 @@ mybatis:
 
 #通用Mapper配置
 mapper:
-  mappers: com.yuhangTao.utils.MyMapper
+  mappers: com.yuhangTao.utilsl.impl.MyMapper
   not-empty: false
   identity: MYSQL
 

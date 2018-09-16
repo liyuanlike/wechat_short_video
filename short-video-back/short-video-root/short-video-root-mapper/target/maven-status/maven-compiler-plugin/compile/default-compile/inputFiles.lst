@@ -1,8 +1,8 @@
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\UsersMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\CommentsMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\UsersLikeVideosMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\SearchRecordsMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\UsersReportMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\VideosMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\BgmMapper.java
-E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\mapper\UsersFansMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\SearchRecordsMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\UsersMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\VideosMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\UsersFansMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\UsersLikeVideosMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\UsersReportMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\BgmMapper.java
+E:\wechat_app\short_video\short-video-back\short-video-root\short-video-root-mapper\src\main\java\com\yuhangTao\mapper\CommentsMapper.java

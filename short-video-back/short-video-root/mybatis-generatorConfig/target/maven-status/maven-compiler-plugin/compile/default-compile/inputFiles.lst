@@ -2,7 +2,6 @@ E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorCon
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\Users.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\Bgm.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\SearchRecords.java
-E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\utils\MyMapper.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\mapper\VideosMapper.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\Comments.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\mapper\BgmMapper.java
@@ -16,3 +15,4 @@ E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorCon
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\UsersReport.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\UsersFans.java
 E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\pojo\Videos.java
+E:\wechat_app\short_video\short-video-back\short-video-root\mybatis-generatorConfig\src\main\java\com\yuhangTao\MyMapper.java

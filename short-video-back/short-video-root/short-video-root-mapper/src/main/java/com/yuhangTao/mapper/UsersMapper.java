@@ -1,10 +1,9 @@
-package mapper;
+package com.yuhangTao.mapper;
 
 
-
-
-import pojo.Users;
+import com.yuhangTao.pojo.Users;
 import com.yuhangTao.utilsl.impl.MyMapper;
+
 
 
 public interface UsersMapper extends MyMapper<Users> {

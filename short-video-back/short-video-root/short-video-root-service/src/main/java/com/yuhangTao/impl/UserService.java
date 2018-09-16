@@ -1,10 +1,17 @@
-package com.yuhangTao.service;
+package com.yuhangTao.impl;
 
-import pojo.Users;
+import com.yuhangTao.pojo.Users;
 
+
+/**
+ * 用户服务接口
+ * 功能：1.查询用户是否存在
+ * 2.创建用户
+ *
+ */
 public interface UserService {
 
     boolean queryUserNameIsExists(String username);
 
-    void saveUser(Users user);
+    void createUser(Users user);
 }

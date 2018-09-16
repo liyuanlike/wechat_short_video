@@ -1,7 +1,7 @@
 package com.yuhangTao.mapper;
 
-import com.yuhangTao.pojo.UsersReport;
 import com.yuhangTao.MyMapper;
+import com.yuhangTao.pojo.UsersReport;
 
 public interface UsersReportMapper extends MyMapper<UsersReport> {
 }

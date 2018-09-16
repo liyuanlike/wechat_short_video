@@ -1,10 +1,9 @@
-package mapper;
+package com.yuhangTao.mapper;
 
 
-
-
-import pojo.Videos;
+import com.yuhangTao.pojo.Videos;
 import com.yuhangTao.utilsl.impl.MyMapper;
+
 
 
 public interface VideosMapper extends MyMapper<Videos> {

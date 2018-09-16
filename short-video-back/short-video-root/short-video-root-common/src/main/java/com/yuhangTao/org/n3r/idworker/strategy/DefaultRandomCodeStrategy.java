@@ -1,8 +1,8 @@
 package com.yuhangTao.org.n3r.idworker.strategy;
 
-import org.n3r.idworker.Id;
-import org.n3r.idworker.RandomCodeStrategy;
-import org.n3r.idworker.utils.Utils;
+import com.yuhangTao.org.n3r.idworker.Id;
+import com.yuhangTao.org.n3r.idworker.RandomCodeStrategy;
+import com.yuhangTao.org.n3r.idworker.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
