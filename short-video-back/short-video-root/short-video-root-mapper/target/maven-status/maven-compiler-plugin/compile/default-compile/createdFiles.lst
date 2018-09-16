@@ -1,0 +1,8 @@
+mapper\VideosMapper.class
+mapper\CommentsMapper.class
+mapper\UsersLikeVideosMapper.class
+mapper\BgmMapper.class
+mapper\SearchRecordsMapper.class
+mapper\UsersMapper.class
+mapper\UsersFansMapper.class
+mapper\UsersReportMapper.class

@@ -11,5 +11,12 @@
 
     <artifactId>short-video-root-pojo</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yuhangTao</groupId>
+            <artifactId>short-video-root-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

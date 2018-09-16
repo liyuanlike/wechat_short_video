@@ -11,5 +11,28 @@
 
     <artifactId>short-video-root-mini-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yuhangTao</groupId>
+            <artifactId>short-video-root-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--热部署-->
+        <!--devtools可以实现页面热部署（即页面修改后会立即生效，
+        这个可以直接在application.properties文件中配置spring.thymeleaf.cache=false来实现）-->
+        <!--实现类文件热部署（类文件修改后不会立即生效），实现对属性文件的热部署-->
+        <!--即devtools会监听classpath下的文件变动，并且会立即重启（发生在保存时期），
+        注意：因为采用的虚拟机机制，该项重启是很快的-->
+        <!-- (1)base classloader （Base类加载器）：加载不改变Class，例如：第三方提供的jar包-->
+        <!-- (2)restart classloader （Restart类加载器）：加载正在开发的Class -->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--&lt;!&ndash;optional=true,依赖不会传递，该项目依赖devtools；-->
+            <!--之后依赖boot项目的项目如果想使用devtools，需要重新引入&ndash;&gt;-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
+    </dependencies>
 
 </project>

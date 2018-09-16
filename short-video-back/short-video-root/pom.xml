@@ -3,11 +3,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
+
+
     <groupId>com.yuhangTao</groupId>
     <artifactId>short-video-root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <modules>
+        <module>short-video-root-common</module>
+        <module>short-video-root-pojo</module>
+        <module>short-video-root-mapper</module>
+        <module>short-video-root-service</module>
+        <module>short-video-root-mini-api</module>
+        <module>mybatis-generatorConfig</module>
+    </modules>
     <name>小宇短视频</name>
     <description>
         微信短视频

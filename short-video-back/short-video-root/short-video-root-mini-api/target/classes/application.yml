@@ -1,0 +1,71 @@
+###########################################################################
+#
+# 配置数据源相关，使用阿里巴巴的druid数据源
+#
+###########################################################################
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wechat_video
+    username: root
+    password: 12345
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
+
+  #文件上传配置
+  servlet:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 1000Mb
+
+  #关闭缓存，即时刷新
+  thymeleaf:
+    cache: true
+
+  #热部署生效
+  devtools:
+    restart:
+      enabled: true
+      #设置重启的目录，添加哪个目录的文件需要restart
+      additional-paths: src/main/java
+      #排除哪个目录文件不需要restart，资源文件修改建议手动重启
+      #也可以设置WEB-INF文件夹内容修改不重启exclude: WEB-INF/**
+#      exclude: static/**,public/**
+
+###########################################################################
+#
+# mybatis 配置
+#
+###########################################################################
+mybatis:
+  type-aliases-package: com.yuhangTao.pojo # pojo工程下的pojo包
+  mapper-locations: classpath:mapper/*.xml
+
+#通用Mapper配置
+mapper:
+  mappers: com.yuhangTao.utils.MyMapper
+  not-empty: false
+  identity: MYSQL
+
+#分页插件配置
+pagehelper:
+  helper-dialect: mysql
+#  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+
+#配置api端口号
+server:
+  port: 8081
+  #tomcat的URI编码
+  tomcat:
+    uri-encoding: UTF-8
+
+
