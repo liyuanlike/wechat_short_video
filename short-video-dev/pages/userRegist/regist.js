@@ -15,7 +15,7 @@ Page({
       wx.showToast({
         title: '用户名或密码不能为空',
         icon: 'none',
-        duration: 2000 //3秒后消失
+        duration: 2000 //2秒后消失
       })
     }else{
        var serverUrl=app.serverUrl;
@@ -31,7 +31,7 @@ Page({
          },
          //访问成功
          success: function(res){
-           console.log(res);
+          //  console.log(res);
            var status=res.data.status;
            //注册成功
            if(status==200){

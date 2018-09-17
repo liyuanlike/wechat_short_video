@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.yuhangTao.TestRegistLoginController
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.482 s <<< FAILURE! - in com.yuhangTao.TestRegistLoginController
+testRegist(com.yuhangTao.TestRegistLoginController)  Time elapsed: 0.721 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.yuhangTao.TestRegistLoginController.testRegist(TestRegistLoginController.java:45)
+

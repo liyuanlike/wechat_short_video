@@ -47,6 +47,26 @@ public class UserServiceImpl implements UserService {
         return result == null ? false : true;
     }
 
+
+    /**
+     * 查询用户是否存在，即用户名密码是否正确
+     * 此处必须返回一个Users对象，因为里面包
+     * 含了用户的信息
+     * @param username
+     * @param password
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public Users queryUserForLogin(String username,String password) {
+        Users user=new Users();
+        user.setUsername(username);
+        user.setPassword(password);
+
+        return usersMapper.selectOne(user);
+    }
+
+
     /**
      * 创建用户
      * @param user
@@ -59,4 +79,6 @@ public class UserServiceImpl implements UserService {
         usersMapper.insert(user);//创建用户
 
     }
+
+
 }

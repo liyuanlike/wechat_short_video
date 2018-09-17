@@ -44,7 +44,7 @@ public class RegistLoginController {
         }
 
         //2.判断用户名是否存在
-        boolean userIsExists=userService.queryUserNameIsExists(user.getUsername());
+        boolean userIsExists = userService.queryUserNameIsExists(user.getUsername());
 
         if(userIsExists){
             return IMoocJSONResult.errorMsg("该用户已存在");
@@ -56,6 +56,35 @@ public class RegistLoginController {
         user.setPassword("");//安全考虑，不返回密码
         return IMoocJSONResult.ok(user);
     }
+
+    /*用户登录*/
+    @ApiOperation(value = "用户登录",notes = "用户登录接口")
+    @PostMapping("/login")
+    public IMoocJSONResult login(@RequestBody Users user){
+
+        String username=user.getUsername();
+        String password=user.getPassword();
+        //1.判断用户名，密码是否为空(这里使用apache的commons工具类中的StringUtils来判断)
+        if(StringUtils.isBlank(username) || StringUtils.isBlank(password)){
+            return IMoocJSONResult.errorMsg("用户名或密码不能为空");
+        }
+        //密码加密
+        try {
+            password=MD5Utils.getMD5Str(password);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Users result=userService.queryUserForLogin(username,password);
+        if(result==null){
+            return IMoocJSONResult.errorMsg("用户名或密码错误");
+        }else {
+            result.setPassword("");//安全考虑，不返回密码
+            return IMoocJSONResult.ok(result);
+        }
+
+    }
+
 
     /*
     * 完善用户信息
