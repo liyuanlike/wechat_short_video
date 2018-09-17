@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view>
+  <view>
+    <image class='login-img' src='../resource/images/dsp.jpg'></image>
+  </view>
+  <view></view>
+</view>

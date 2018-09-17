@@ -18,6 +18,21 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--注意如果你加了<scope>test</scope>则只对在此工程下的test文件下的类有效
+        这也是为什么在common工程下加此依赖，但我们却用不了的原因，若把scope去掉，则
+        可以使用-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <!-- 排除springboot默认的logback日志框架 不然会报错-->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
         <!--热部署-->
         <!--devtools可以实现页面热部署（即页面修改后会立即生效，

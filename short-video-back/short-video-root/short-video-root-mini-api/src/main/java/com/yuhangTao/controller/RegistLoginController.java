@@ -38,7 +38,7 @@ public class RegistLoginController {
     @PostMapping("/regist")
     public IMoocJSONResult regist(@RequestBody Users user){
 
-        //1.判断用户名，密码是否为空
+        //1.判断用户名，密码是否为空(这里使用apache的commons工具类中的StringUtils来判断)
         if(StringUtils.isBlank(user.getUsername())||StringUtils.isBlank(user.getPassword())){
             return IMoocJSONResult.errorMsg("用户名和密码不能为空");
         }
@@ -47,14 +47,14 @@ public class RegistLoginController {
         boolean userIsExists=userService.queryUserNameIsExists(user.getUsername());
 
         if(userIsExists){
-            return IMoocJSONResult.errorMsg("该用户名已存在,请重新输入");
+            return IMoocJSONResult.errorMsg("该用户已存在");
         }else{
             //3.不存在则保存用户注册信息
             perfectUser(user);//先完善用户信息
             userService.createUser(user);//创建
         }
-
-        return IMoocJSONResult.ok();
+        user.setPassword("");//安全考虑，不返回密码
+        return IMoocJSONResult.ok(user);
     }
 
     /*

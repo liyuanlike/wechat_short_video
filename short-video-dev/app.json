@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/userRegist/regist",
+    "pages/userLogin/login",
     "pages/index/index"
   ],
   "window":{
@@ -8,5 +9,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小宇短视频",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "debug": true
 }

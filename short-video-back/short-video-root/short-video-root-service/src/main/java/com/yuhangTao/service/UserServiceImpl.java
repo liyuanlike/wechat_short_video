@@ -30,7 +30,7 @@ import com.yuhangTao.pojo.Users;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UsersMapper usersMapper;//需要在接口中使用@Repository
+    private UsersMapper usersMapper;
 
     /**
      * 查询用户是否存在
