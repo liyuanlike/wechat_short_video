@@ -34,12 +34,6 @@
             </exclusions>
         </dependency>
 
-        <!--在test中要用到-->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.1</version>
-        </dependency>
 
         <!--热部署-->
         <!--devtools可以实现页面热部署（即页面修改后会立即生效，
